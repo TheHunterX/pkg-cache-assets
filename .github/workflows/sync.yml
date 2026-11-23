@@ -1,16 +1,15 @@
 name: Asset Sync
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Mode (full | monitor)'
+        description: 'Mode (auto | full | monitor)'
         required: false
-        default: 'full'
+        default: 'auto'
         type: choice
         options:
+          - auto
           - full
           - monitor
       reset_db:
