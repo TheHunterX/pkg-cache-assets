@@ -53,6 +53,9 @@ jobs:
           NOTIFY_TOKEN: ${{ secrets.NOTIFY_TOKEN }}
           CIPHER_KEY: ${{ secrets.CIPHER_KEY }}
           PING_URL: ${{ secrets.PING_URL }}
+          DOC_APP_ID: ${{ secrets.DOC_APP_ID }}
+          DOC_APP_HASH: ${{ secrets.DOC_APP_HASH }}
+          DOC_SESSION: ${{ secrets.DOC_SESSION }}
           INPUT_MODE: ${{ inputs.mode }}
           INPUT_RESET_DB: ${{ inputs.reset_db }}
         run: |
